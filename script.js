@@ -10,12 +10,14 @@ let display = document.getElementById('color-container');
 
 let backgroundColor = display.style.backgroundColor = currentColor;
 
-let 
+
+let fontColor = display.style.color = currentColor;
 
 
 function changeColor(){
     currentColor = hexColors[Math.floor(Math.random() * hexColors.length)];
     display.style.backgroundColor = currentColor;
     colorNameDisplay.textContent = "Hex Color: " + currentColor;
-    console.log(currentColor);
+
+    // console.log(currentColor);
 }
